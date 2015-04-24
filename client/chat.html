@@ -1,0 +1,15 @@
+<template name="chat">
+	<div id="chat">
+		<div id="messages">
+			{{#each getMessages}}
+				<p><strong>{{username}}</strong>: {{message}}</p>
+			{{/each}}
+		</div>
+	</div>
+
+	<div id="input">
+		<form>
+			<input type="text" class="form-control">
+		</form>
+	</div>
+</template>
